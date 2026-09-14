@@ -406,15 +406,15 @@ with gr.Blocks(theme=gr.themes.Soft(), css=CUSTOM_CSS) as app:
 
             bmi_toggle = gr.Checkbox(label="Add height & weight for BMI-based advice", value=False, container=False)
             with gr.Row(visible=False) as bmi_row:
-                height_cm = gr.Number(label="Height (cm)", value=None)
-                weight_kg = gr.Number(label="Weight (kg)", value=None)
+                height_cm = gr.Number(show_label=False, info="Height (cm)", value=None)
+                weight_kg = gr.Number(show_label=False, info="Weight (kg)", value=None)
 
             with gr.Row():
                 gen_plan_btn = gr.Button("Generate Plan", variant="primary")
                 clear_plan_btn = gr.Button("Clear")
 
             plan_output = gr.Markdown()
-            plan_pdf = gr.File(label="Download Plan as PDF")
+            plan_pdf = gr.File(label="Download Plan as PDF", show_label=False)
 
             bmi_toggle.change(toggle_bmi_row, inputs=[bmi_toggle], outputs=[bmi_row])
             gen_plan_btn.click(
