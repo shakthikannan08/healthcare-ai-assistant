@@ -29,7 +29,7 @@ python app.py
 
 ## 🔗 Live demo
 
-**[Try it here](#)** — deployed on Render. *(swap the `#` for your actual Render URL)*
+**[Try it here](https://healthcare-ai-assistant-4lf3.onrender.com)** — deployed on Render. 
 
 ## Why this exists
 
