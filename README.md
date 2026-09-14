@@ -16,7 +16,7 @@ A healthcare chatbot rebuilt from a Class 12 AI project that looked cool in a de
 
 - **[Gradio](https://gradio.app)** — UI
 - **[Groq](https://groq.com)** — inference via `openai/gpt-oss-120b`
-- **Groq Whisper** (`whisper-large-v3-turbo`) — voice-to-text
+- **[Groq Whisper](https://console.groq.com/docs/speech-to-text)** (`whisper-large-v3-turbo`) — voice-to-text
 - **[fpdf2](https://pypi.org/project/fpdf2/)** — PDF export
 
 ## Running it yourself
@@ -29,7 +29,7 @@ python app.py
 
 ## 🔗 Live demo
 
-**[Try it here](https://healthcare-ai-assistant-4lf3.onrender.com)** — deployed on Render. 
+**[Try it here](https://healthcare-ai-assistant-4lf3.onrender.com/)** — deployed on Render. *(swap the `#` for your actual Render URL)*
 
 ## Why this exists
 
