@@ -414,7 +414,8 @@ with gr.Blocks(theme=gr.themes.Soft(), css=CUSTOM_CSS) as app:
                 clear_plan_btn = gr.Button("Clear")
 
             plan_output = gr.Markdown()
-            plan_pdf = gr.File(label="Download Plan as PDF", show_label=False)
+            gr.Markdown("**Download Plan as PDF**")
+            plan_pdf = gr.File(show_label=False)
 
             bmi_toggle.change(toggle_bmi_row, inputs=[bmi_toggle], outputs=[bmi_row])
             gen_plan_btn.click(
