@@ -14,11 +14,12 @@ from groq import Groq
 from fpdf import FPDF
 import tempfile
 import re
+import os
 
 # -------------------------------
 # GROQ CLIENT
 # -------------------------------
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
 MODEL_NAME = "openai/gpt-oss-120b"
 WHISPER_MODEL = "whisper-large-v3-turbo"
